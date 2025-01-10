@@ -23,8 +23,8 @@ $(function(){ // Con esto hacemos que el script espere a que el documento este c
         $(".container").append(
             `<div class="elemento" style="background-color: ${color};">
                 <img src="${imagenAleatoria}" alt=""/>
-                <button class="btn-img">Cambiar</button>
-                <button class="btn-img">Borrar</button>
+                <button class="btn-change">Cambiar</button>
+                <button class="btn-delete">Borrar</button>
             </div>`
         );
     });
