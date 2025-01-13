@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario imágenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulario</h2>
+    <h4>Selecciona un color:</h4>
+    <select name="color" id="color">
+        <option value="white">Blanco</option>
+        <option value="black">Negro</option>
+        <option value="red">Rojo</option>
+        <option value="yellow">Amarillo</option>
+        <option value="purple">Morado</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <button class="colorChange">Cambiar color de fondo</button>
+    <button class="addElements">Añadir más elementos</button>
+    <button class="resetColors">Resetear colores</button>
+
+    <h2>Elementos</h2>
+    <div class="container">
+        <div class="elemento">
+            <img src="images/imagen1.png" alt="">
+            <button class="btn-change">Cambiar</button>
+            <button class="btn-delete">Borrar</button>
+        </div>
+        <div class="elemento">
+            <img src="images/imagen2.png" alt="">
+            <button class="btn-change">Cambiar</button>
+            <button class="btn-delete">Borrar</button>
+        </div>
+        <div class="elemento">
+            <img src="images/imagen3.png" alt="">
+            <button class="btn-change">Cambiar</button>
+            <button class="btn-delete">Borrar</button>
+        </div>
+        <div class="elemento">
+            <img src="images/imagen4.png" alt="">
+            <button class="btn-change">Cambiar</button>
+            <button class="btn-delete">Borrar</button>
+        </div>
+        <div class="elemento">
+            <img src="images/imagen6.png" alt="">
+            <button class="btn-change">Cambiar</button>
+            <button class="btn-delete">Borrar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
