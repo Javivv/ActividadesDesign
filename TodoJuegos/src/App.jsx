@@ -1,30 +1,28 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Usar Routes en lugar de Switch
-import './App.css'
-import HomePage from './pages/HomePage'
-import Carrousel from './components/Carrousel';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Inicio from "./paginas/Inicio";
+import Explorar from "./paginas/Explorar";
+import DetalleJuego from "./paginas/DetalleJuego";
+import MostrarBusqueda from "./paginas/MostrarBusqueda";
+import Header from "./Componentes/Header";
+import Footer from "./Componentes/Footer";
 
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <Router>
-      <Navbar></Navbar>
-      <div>
-        <Routes>
-          <Route path="/" element={<Carrousel />} />
-          <Route path="/search" element={<HomePage />} />
-        </Routes>
-      </div>
-      <Footer></Footer>
-    </Router>
+const App = () => {
+    return (
+        <Router>
+            <Header />
+            <main className="container mx-auto p-4">
+                <Routes>
+                    <Route path="/" element={<Inicio/>} />
+                    <Route path="/explorar" element={<Explorar/>} />
+                    <Route path="/juego/:id" element={<DetalleJuego/>} />
+                    <Route path="/search/:query" element={<MostrarBusqueda/>} />
+                </Routes>
+            </main>
+            <Footer />
+        </Router>
+    );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
