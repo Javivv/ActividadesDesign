@@ -1,5 +1,5 @@
 import { useLocation, useParams } from "react-router-dom";
-import TarjetaJuego from "../Componentes/TarjetaJuego"; // Suponiendo que este componente es el que muestra cada juego
+import TarjetaJuego from "../Componentes/TarjetaJuego";
 import SearchBar from "../Componentes/SearchBar";
 
 

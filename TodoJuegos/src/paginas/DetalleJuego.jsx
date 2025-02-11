@@ -17,13 +17,12 @@ const DetalleJuego = () => {
     const toggleFavorito = () => {
         setFavorito(prevState => {
             const newState = !prevState;
-            // Guardar el estado del favorito en localStorage
             localStorage.setItem(id, newState);
             return newState;
         });
     };
 
-    // Comprobar si el juego está marcado como favorito al cargar
+    // Comprobamos si el juego está marcado como favorito al cargar
     useEffect(() => {
         const isFavorito = localStorage.getItem(id) === 'true';
         setFavorito(isFavorito);

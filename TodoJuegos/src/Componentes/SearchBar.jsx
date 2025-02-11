@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { buscarJuegos } from "../Servicios/apiJuegos"; // Asumiendo que esta función devuelve los resultados
+import { buscarJuegos } from "../Servicios/apiJuegos";
 
 const SearchBar = () => {
     const [query, setQuery] = useState(""); // Estado para la búsqueda

@@ -21,10 +21,8 @@ const Inicio = () => {
 
     return (
         <div className="container mx-auto mt-8">
-            {/* Carrousel destacado */}
             <Carrousel />
             
-            {/* Sección para la búsqueda */}
             <div className="text-center my-8">
                 <h2 className="text-2xl font-semibold mb-4">¿Estás buscando un juego en particular?</h2>
                 <p className="text-gray-600 mb-4">
@@ -33,12 +31,10 @@ const Inicio = () => {
                 <SearchBar onSearch={handleSearch} />
             </div>
 
-            {/* Títulos de los juegos dependiendo de la búsqueda */}
             <h2 className="text-3xl font-bold mb-6 text-center">
                 Juegos {searchResults.length > 0 ? "Encontrados" : "Populares"}
             </h2>
 
-            {/* Si no hay resultados de búsqueda, mostramos los juegos populares */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {juegosParaMostrar.length > 0 ? (
                     juegosParaMostrar.map((juego) => (
