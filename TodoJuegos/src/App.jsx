@@ -3,8 +3,10 @@ import Inicio from "./paginas/Inicio";
 import Explorar from "./paginas/Explorar";
 import DetalleJuego from "./paginas/DetalleJuego";
 import MostrarBusqueda from "./paginas/MostrarBusqueda";
+import MostrarDesarrollador from "./paginas/MostrarDesarrollador";
 import Header from "./Componentes/Header";
 import Footer from "./Componentes/Footer";
+import Desarrolladores from "./paginas/Desarrolladores";
 
 
 
@@ -18,6 +20,8 @@ const App = () => {
                     <Route path="/explorar" element={<Explorar/>} />
                     <Route path="/juego/:id" element={<DetalleJuego/>} />
                     <Route path="/search/:query" element={<MostrarBusqueda/>} />
+                    <Route path="/publisher/:id" element={<MostrarDesarrollador/>} />
+                    <Route path="/publishers" element={<Desarrolladores/>} />
                 </Routes>
             </main>
             <Footer />

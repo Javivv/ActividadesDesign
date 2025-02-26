@@ -11,6 +11,7 @@ const Header = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/explorar", label: "Explorar" },
+              { to: "/publishers", label: "Publishers" },
               // { to: "/feature", label: "Feature" },
               // { to: "/blog", label: "Blog" },
               // { to: "/about", label: "About" },

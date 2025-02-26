@@ -9,6 +9,7 @@ const Encabezado = () => {
                     <ul className="flex gap-4">
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to="/explorar">Explorar</Link></li>
+                        <li><Link to="/explorar">Publishers</Link></li>
                     </ul>
                 </nav>
             </div>
